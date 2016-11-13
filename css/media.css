@@ -1,0 +1,367 @@
+@media screen and (min-width:1980px)  {
+.container {
+	width: 1980px;
+}
+menu ul li a {
+	font-size: 27px;
+}
+.info .subscribers {
+	font-size: 41px;
+}
+.info .subscribers {
+	font-size: 26px;
+}
+#email {
+	font-size: 23px;
+	margin-top:-15px;
+}
+.enter {
+	font-size: 24px;
+}
+.main-news .user, .main-news .clock {
+	font-size: 24px;
+}
+.main-news a {
+	font-size: 58px;
+}
+.main-news .text {
+	font-size: 25px;
+}
+.main-news .bottom a {
+	font-size: 21px;
+}
+.main-news .bottom .right span {
+	font-size: 22px;
+}
+.main-news .bottom .chat {
+	width: 49px
+}
+.main-news .bottom .eye {
+	font-size: 58px;
+}
+.wrap-news main .photo .user, .wrap-news main .photo .clock {
+	font-size: 25px;
+}
+.wrap-news main .text h3 a {
+	font-size: 34px;
+}
+.wrap-news main .text .text-info {
+	font-size: 25px;
+}
+.wrap-news main .text .bottom a {
+	font-size: 23px;
+}
+.wrap-news main .text .bottom .right span {
+	font-size: 24px;
+}
+.wrap-news main .text .bottom .eye {
+	width: 62px;
+}
+.wrap-news aside .title {
+	font-size: 34px;
+}
+.wrap-news aside ul li a {
+	font-size: 24px;
+}
+.wrap-news aside .all-themes {
+	font-size: 25px;
+}
+.wrap-news main .prev {
+	font-size: 25px;
+}
+footer .logo-text, footer .quest {
+	font-size: 24px;
+}
+footer .title {
+	font-size: 29px;
+}
+footer .list a {
+	font-size: 22px;
+}
+footer .whom {
+	font-size: 24px;
+}
+footer .num {
+	font-size: 33px;
+}
+.copyright {
+	font-size: 21px;
+}
+menu ul {
+	float: left;
+	margin-left: -105px;
+}
+.wrap-news main .text .bottom .chat {
+	font-size: 52px;
+	width: 50px;
+}
+}
+@media screen and (max-width:1200px)  {
+.logo {
+	padding: 0;
+	text-align: center;
+	margin: 10px 0;
+}
+menu ul, .search-icon,.enter {
+	margin: 0;
+}
+menu ul {
+	margin-top: 5px;
+}
+.search-icon {
+	margin:8px auto 0;
+}
+.enter {
+	margin-top: -10px;
+	margin-bottom: 5px;
+}
+.nopad-l-m {
+	padding-left: 0;
+}
+.info .number {
+	padding-left: 30px;
+}
+.info .number.pad-m {
+	padding-left: 0;
+}
+footer {
+	text-align: center;
+}
+footer .quest .quest-mail {
+	/*background: url(../img/message-icon1.png) no-repeat left+140px center;*/
+	width: 160px;
+}
+footer .pad-r {
+	padding-right: 15px
+}
+footer .fot div:nth-child(1), footer .fot div:nth-child(2){
+  margin-bottom: 20px;
+}
+menu.fixed .forfix {
+	width: 10%;
+	display: inline-block;
+	position: relative;
+}
+menu.fixed .nav {
+	width: 70%;
+	display: inline-block;
+	position: relative;
+	margin-left: -50px;
+}
+menu.fixed .what-search {
+  width: 200px;
+}
+menu.fixed .logo {padding:7px 0 0 0;}
+}
+@media screen and (max-width:992px)  {
+.wrap-news {
+	margin-top: -200px;
+}
+.info .number{
+	font-size: 21px;
+}
+.info .subscribers {
+	font-size: 14px;
+}
+.info {min-height: 62px;}
+#email {
+	padding: 20px;
+}
+/* menu mobile*/
+	.nav {
+		position: relative;
+		min-height: 45px;
+		margin-bottom: 10px;
+	}
+	.nav ul {
+		width: 100%;
+		min-height: 45px;
+		min-width: 125px;
+		max-width: 125px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 1px #aaa;
+		background: #FAFAFA url(../img/icon-menu.png) no-repeat 10px 15px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+		z-index: 3;
+	}
+	.nav li {
+		display: none; /* скрыть все <li> пункты */
+		margin: 0;
+		width: 100%;
+	}
+	.nav .current {
+		display: block; /* показывать только текущие активные <li> пункты */
+	}
+	.nav a {
+		display: block;
+		padding: 7px 5px 5px 32px;
+		text-align: left;
+	}
+	.nav .current a {
+		background: none;
+		color: #666;
+		padding-left: 40px;
+	}
+
+	/* при наведении на пункты меню */
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.nav ul:hover .current {
+		background: url(images/icon-check.png) no-repeat 10px 7px;
+	}
+	menu ul {
+		margin-top: 0;
+	}
+	.enter {
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	.search-icon {
+		margin-top: 14px;
+	}
+	.wrap-news main, .wrap-news aside {
+		width: 100%;
+	}
+	.wrap-news aside {
+		margin-top: 40px;
+	}
+	.wrap-news aside .rubric {
+		width: 49.2%;
+		float: left;
+	}
+	.wrap-news aside .forum{
+		width: 49.2%;
+		float: right;
+		margin-top: 0;
+	}
+	.wrap-news aside .all-themes {
+		float: right;
+		width: 49.2%;
+	}
+	menu ul li a.article {
+		background: url(../img/arrow-bottom.png) no-repeat center right+10px;
+	}
+
+menu.fixed .forfix {
+	width: 10%;
+	display: inline-block;
+	position: relative;
+}
+menu.fixed .nav {
+	width: 20%;
+	display: inline-block;
+	position: relative;
+	margin-left: 150px;
+	margin-top:-15px;
+}
+menu.fixed .forfixsearch {
+	width: 30%;
+	margin-left: 150px;
+}
+menu.fixed .what-search {
+  width: 200px;
+  float: right;
+}
+menu.fixed .logo {padding:7px 0 0 0;}
+.wrap-news-title {
+	padding: 0 40px;
+}
+}
+@media screen and (max-width:768px)  {
+	#email {
+		margin-top: 0;
+	}
+	.info .number.pad,.info .number {
+		padding-left: 15px;
+	}
+	.friend {
+		padding-top: 10px;
+	}
+	footer #email {
+		width: 50%;
+	}
+	.wrap-news aside .forum, .wrap-news aside .rubric {
+		width: 100%;
+		float: left;
+		margin-top: 0;
+	}
+	.wrap-news aside .forum {
+		width: 100%;
+		margin-top: 20px;
+	}
+	.wrap-news aside .all-themes {
+		width: 100%;
+	}
+	.wrap-news {
+		margin-top: 0px;
+	}
+menu.fixed .forfix {
+	width: 10%;
+	display: inline-block;
+	position: relative;
+}
+menu.fixed .nav {
+	width: 40%;
+	display: inline-block;
+	position: relative;
+	margin-left: 30%;
+	margin-top:-15px;
+}
+menu.fixed .forfixsearch {
+	width: 40%;
+	margin-left: 150px;
+	display: none;
+}
+menu.fixed .what-search {
+  width: 250px;
+  float: right;
+}
+menu.fixed .logo {padding:7px 0 0 0;}
+.search-icon {float: right;}
+.wrap-news-detail .comment .form input, .wrap-news-detail .comment .form textarea {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.wrap-news-detail .comment .form input:nth-child(2) {
+	margin-left:0;
+}
+.wrap-news-detail {
+  margin-top: -311px;
+}
+.wrap-news-title {
+	padding:0;
+}
+.wrap-news-title .title {
+	padding:20px 0 0 0;
+}
+.wrap-news-detail .text,.wrap-news-detail .bottom,.wrap-news-detail .comment,.comments {
+	padding:30px 10px;
+}
+.similar-articles ul li {
+	width: 100%;
+	margin-bottom:15px;
+}
+.wrap-news-detail .bottom .left,.wrap-news-detail .bottom .right {
+	clear: both;
+	float: none;
+	width: 100%;
+}
+.wrap-news-detail .bottom {
+	text-align: center;
+}
+.wrap-news-detail .bottom  .right img  {
+      margin-top: 0;
+}
+.forum-main .last-info article {width: 100%;}
+.forum-main nav ul {padding-left: 15px;}
+.forum-main .last-info article .note {text-align: center;}
+}

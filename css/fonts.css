@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "pfdindisplaypro-med";
+	src: url("../fonts/pfdindisplaypro-med.eot");
+	src: url("../fonts/pfdindisplaypro-med.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/pfdindisplaypro-med.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "pfdindisplaypro-bold";
+	src: url("../fonts/pfdindisplaypro-bold.eot");
+	src: url("../fonts/pfdindisplaypro-bold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/pfdindisplaypro-bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "pfdindisplaypro-reg";
+	src: url("../fonts/pfdindisplaypro-reg.eot");
+	src: url("../fonts/pfdindisplaypro-reg.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/pfdindisplaypro-reg.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "PTF55F";
+	src: url("../fonts/PTF55F.eot");
+	src: url("../fonts/PTF55F.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/PTF55F.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "MyriadPro-Bold";
+	src: url("../fonts/MyriadPro/MyriadPro-Bold.otf");
+	src: url("../fonts/MyriadPro/MyriadPro-Bold.eot");
+	src: url("../fonts/MyriadPro/MyriadPro-Bold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadPro/MyriadPro-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "fontawesome-webfont";
+	src: url("../fonts/fontawesome-webfont.eot");
+	src: url("../fonts/fontawesome-webfont.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/fontawesome-webfont.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
