@@ -152,6 +152,15 @@ menu.fixed .what-search {
   width: 200px;
 }
 menu.fixed .logo {padding:7px 0 0 0;}
+
+.forum-lvltwo .forum-title .forum-name {
+	float: none;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.forum-lvltwo .forum-title .pagination {
+	width: 100%;
+}
 }
 @media screen and (max-width:992px)  {
 .wrap-news {
@@ -364,4 +373,20 @@ menu.fixed .logo {padding:7px 0 0 0;}
 .forum-main .last-info article {width: 100%;}
 .forum-main nav ul {padding-left: 15px;}
 .forum-main .last-info article .note {text-align: center;}
+.forum-lvltwo .forum-title .pagination ul li a {
+	display: block;
+}
+.forum-lvltwo .forum-title .pagination .show, .forum-lvltwo .forum-title .pagination ul {
+	float: none;text-align: center;
+}
+.forum-lvltwo .forum-title .pagination ul {
+	margin-top: 10px;
+}
+.forum-lvltwo .forum-title .pagination ul li {
+	float: none;
+	display: inline-block;
+}
+.forum-lvltwo .important-info .title {
+	text-align: center;
+}
 }

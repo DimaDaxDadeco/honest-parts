@@ -47,3 +47,11 @@
 	font-style: normal;
 	font-weight: normal;
 }
+@font-face {
+	font-family: "FontAwesome";
+	src: url("../fonts/FontAwesome.eot");
+	src: url("../fonts/FontAwesome.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/FontAwesome.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

@@ -1099,6 +1099,10 @@ section.wrap-main-news {
 .forum-main nav ul li:last-child::after {
   display: none;
 }
+.forum-main nav ul li.current a {
+  color: #a2a8ad;
+  text-decoration: none;
+}
 .forum-main {
   color: #0b2233;
 }
@@ -1222,4 +1226,106 @@ section.wrap-main-news {
 }
 .forum-main .last-info article .time-send-info {
   margin-right:15px;
+}
+.forum-lvltwo {
+  color: #0b2233;
+}
+.forum-lvltwo .important-info .title {
+  border-bottom: none;
+}
+.forum-lvltwo .forum-title {
+  padding: 25px 0;
+}
+.forum-lvltwo .forum-title .forum-name {
+  float: left;
+}
+.forum-lvltwo .forum-title .forum-name h3 {
+  font-family: pfdindisplaypro-med;
+  font-size: 1.5em;
+  margin: 0;
+}
+.forum-lvltwo .forum-title .forum-name p {
+  font-family: pfdindisplaypro-reg;
+  color: #a2a8ad;
+  margin: 0;
+}
+.forum-lvltwo .forum-title .pagination {
+  float: right;
+  margin-top: 9px;
+}
+.forum-lvltwo .forum-title .pagination .show {
+  color: #a2a8ad;
+  float: left;
+  display: block;
+  margin:0;
+  margin-right: 30px;
+}
+.forum-lvltwo .forum-title .pagination ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+.forum-lvltwo .forum-title .pagination ul li {
+  float: left;
+  margin-right: 10px;
+  color: #bbcbd8;
+  font-family: "pfdindisplaypro-bold";
+}
+.forum-lvltwo .forum-title .pagination ul li a {
+  font-family: "pfdindisplaypro-med";
+  font-size: 1.125em;
+  color: #4a97d2;
+  padding: 15px 12px;
+  border: 1px solid #cfdde8;
+}
+.forum-lvltwo .forum-title .pagination ul li a:hover {
+  background: #d9dee2;
+}
+.forum-lvltwo .forum-title .pagination ul li:first-child a {
+  color: #fff;
+  padding: 15px 18px;
+  background: #226496;
+}
+
+.forum-lvltwo .forum-title .pagination ul li:first-child a:hover {
+  background: #4b97d3;
+}
+.forum-lvltwo .forum-title .pagination ul li:first-child .arrow {
+  margin-right: 5px;
+}
+.forum-lvltwo .forum-title .pagination ul li a .arrow {
+  background: url(../img/arrow-left-pag.png);
+  display: inline-block;
+  width: 7px;
+  height: 11px;
+}
+.forum-lvltwo .forum-title .pagination ul li:last-child a {
+  color: #fff;
+  padding: 15px 18px;
+  background: #226496;
+}
+
+.forum-lvltwo .forum-title .pagination ul li:last-child a:hover {
+  background: #4b97d3;
+}
+.forum-lvltwo .forum-title .pagination ul li:last-child a .arrow {
+  -moz-transform: rotate(180deg); /* Для Firefox */
+    -ms-transform: rotate(180deg); /* Для IE */
+    -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(180deg); /* Для Opera */
+    transform: rotate(180deg);
+    margin-left:5px;
+}
+.forum-main article {
+  position: relative;
+}
+.forum-main article::after {
+  content: "";
+  background: url(../img/big-arrow.png);
+  width: 17px;
+  height: 10px;
+  position: absolute;
+  top: 35px;
+  right: 30px;
 }
