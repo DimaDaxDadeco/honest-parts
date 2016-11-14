@@ -1243,6 +1243,7 @@ section.wrap-main-news {
   font-family: pfdindisplaypro-med;
   font-size: 1.5em;
   margin: 0;
+  font-weight: normal;
 }
 .forum-lvltwo .forum-title .forum-name p {
   font-family: pfdindisplaypro-reg;
@@ -1280,7 +1281,7 @@ section.wrap-main-news {
   border: 1px solid #cfdde8;
 }
 .forum-lvltwo .forum-title .pagination ul li a:hover {
-  background: #d9dee2;
+  background: #cfdde8;
 }
 .forum-lvltwo .forum-title .pagination ul li:first-child a {
   color: #fff;
@@ -1310,10 +1311,10 @@ section.wrap-main-news {
   background: #4b97d3;
 }
 .forum-lvltwo .forum-title .pagination ul li:last-child a .arrow {
-  -moz-transform: rotate(180deg); /* Для Firefox */
-    -ms-transform: rotate(180deg); /* Для IE */
-    -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
-    -o-transform: rotate(180deg); /* Для Opera */
+  -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
     transform: rotate(180deg);
     margin-left:5px;
 }
@@ -1328,4 +1329,203 @@ section.wrap-main-news {
   position: absolute;
   top: 35px;
   right: 30px;
+}
+.themes-topic {
+  background: #fff;
+}
+.themes-topic table {
+  width: 100%;
+  color: #0b2233;
+}
+.themes-topic table .header {
+    border-bottom: 1px solid #eaeaea;
+}
+.themes-topic table .header td {
+  text-align: left;
+  font-family: "pfdindisplaypro-med";
+  color: #226496;
+}
+.themes-topic .title {
+    font-family: "MyriadPro-Bold";
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 25px 0;
+    color: #0b2233;
+}
+.themes-topic table .title-theme a {
+  font-family: "pfdindisplaypro-med";
+  font-size: 1.25em;
+  color: #0b2233;
+  text-decoration: underline;
+}
+.themes-topic table .title-theme a:hover {text-decoration: none;}
+.themes-topic table .title-theme {
+  font-family: "PTF55F";
+  font-size: 1.125em;
+  float: left;
+  display: block;
+}
+.themes-topic table i {
+  color: #4a97d2;
+  float: left
+}
+.themes-topic table i.fa-file-text-o {
+  font-size: 1.375em;
+  margin: 0 23px;
+}
+.themes-topic table i.icon {
+  font-size: 1em;
+  border: 1px solid #ebf0f4;
+  padding: 2px 3px;
+  width: 22px;
+  text-align: center;
+  height: 22px;
+}
+.themes-topic table tr:not(.header) td {
+  padding: 20px 25px;
+}
+.themes-topic table tr td:first-child {
+  padding-left: 35px;
+}
+.themes-topic table tr td .answers {
+  position: relative;
+  display: block;
+  font-family: "pfdindisplaypro-reg";
+  padding-left: 25px;
+  color: #a2a8ad;
+}
+.themes-topic table tr td .answers:before {
+  content: "";
+  background: url(../img/chat-grey.png);
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom:0;
+  margin: auto;
+}
+.themes-topic table tr td .views {
+  position: relative;
+  display: block;
+  font-family: "pfdindisplaypro-reg";
+  padding-left: 25px;
+  color: #a2a8ad;
+}
+.themes-topic table tr td .views:before {
+  content: "";
+  background: url(../img/eye-grey.png);
+  width: 18px;
+  height: 11px;
+  position: absolute;
+  left: 2px;
+  top: 0;
+  bottom:0;
+  margin: auto;
+}
+.themes-topic table tr td a {
+  font-family: "pfdindisplaypro-reg";
+  color: #226496;
+  text-decoration: underline;
+}
+.themes-topic table tr td a:hover {
+  text-decoration: none;
+}
+.themes-topic table tr td .last-message {
+  font-family: "pfdindisplaypro-reg";
+  color: #a2a8ad;
+}
+.themes-topic table tr td:not(first-child) {
+  padding: 0 25px;
+}
+.forum-lvltwo .forum-footer {
+  margin-top: 5px;
+  margin-bottom: 13px;
+}
+.forum-lvltwo .info-setting {
+  background: #fff;
+  font-family: "PTF55F";
+}
+.forum-lvltwo .info-setting .title {
+    font-family: "MyriadPro-Bold";
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 25px 35px;
+    border-bottom: 1px solid #eaeaea;
+}
+.forum-lvltwo .info-setting p {
+  font-size: 1.125em;
+  padding: 25px 35px;
+  margin:0;
+}
+.forum-lvltwo .forum-title .pagination ul li:last-child {
+  margin-right:0;
+}
+.forum-lvltwo .list-freedom {
+  font-family: "PTF55F";
+  font-size: 1.125em;
+  margin-top:25px;
+}
+.forum-lvltwo .list-freedom .list, .forum-lvltwo .list-freedom .freedom {
+  width: 49%;
+  background: #fff;
+}
+.forum-lvltwo .list-freedom .list {
+  float: left;
+}
+.forum-lvltwo .list-freedom .freedom {
+  float: right;
+}
+.forum-lvltwo .list-freedom .title {
+    font-family: "MyriadPro-Bold";
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 25px 35px;
+    border-bottom: 1px solid #eaeaea;
+}
+.forum-lvltwo .list-freedom  i {
+    color: #4a97d2;
+    float: left;
+    margin-left: 35px;
+    margin-right: 15px;
+}
+.forum-lvltwo .list-freedom  i.icon {
+  font-size: 1em;
+  border: 1px solid #ebf0f4;
+  padding: 2px 3px;
+  width: 22px;
+  text-align: center;
+  height: 22px;
+}
+.forum-lvltwo .list-freedom {
+  font-size: 1em;
+}
+.forum-lvltwo .freedom {
+  font-family: "PTF55F";
+}
+.forum-lvltwo .freedom .left {
+  float: left;
+  width: 65%;
+  padding-left:35px;
+}
+.forum-lvltwo .freedom .right {
+  width: 35%;
+  float: right;
+  padding-left:35px;
+}
+.forum-lvltwo .list-freedom a {
+  color: #226496;
+  text-decoration: underline;
+}
+.forum-lvltwo .list-freedom a:hover {
+  text-decoration: none;
 }

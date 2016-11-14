@@ -95,6 +95,17 @@ menu ul {
 	font-size: 52px;
 	width: 50px;
 }
+.forum-lvltwo .freedom .left {
+  width: 50%;
+  padding-left:35px;
+}
+.forum-lvltwo .freedom .right {
+  width: 50%;
+  padding-left:35px;
+}
+.forum-lvltwo .list-freedom {
+  font-size: 1.125em;
+}
 }
 @media screen and (max-width:1200px)  {
 .logo {
@@ -160,6 +171,9 @@ menu.fixed .logo {padding:7px 0 0 0;}
 }
 .forum-lvltwo .forum-title .pagination {
 	width: 100%;
+}
+.themes-topic table .title-theme {
+	float: none;
 }
 }
 @media screen and (max-width:992px)  {
@@ -284,6 +298,11 @@ menu.fixed .logo {padding:7px 0 0 0;}
 .wrap-news-title {
 	padding: 0 40px;
 }
+.forum-lvltwo .list-freedom .list {width: 100%;}
+.forum-lvltwo .list-freedom .freedom {
+	width: 100%;
+	margin-top:10px;
+}
 }
 @media screen and (max-width:768px)  {
 	#email {
@@ -388,5 +407,27 @@ menu.fixed .logo {padding:7px 0 0 0;}
 }
 .forum-lvltwo .important-info .title {
 	text-align: center;
+}
+.themes-topic table i {
+	display: none;
+}
+.themes-topic table tr td:nth-child(3) {
+	display: none;
+}
+.themes-topic table tr td:nth-child(5) {
+	display: none;
+}
+.forum-lvltwo .info-setting .title {text-align: center;}
+.forum-main article::after {
+	right: 20px;
+}
+.themes-topic table tr:not(.header) td {
+	padding: 20px 7px;
+}
+.themes-topic table tr td:not(first-child) {
+	padding: 0 5px;
+}
+.themes-topic table tr td:first-child {
+	padding-left: 0;
 }
 }
