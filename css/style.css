@@ -1230,9 +1230,6 @@ section.wrap-main-news {
 .forum-lvltwo {
   color: #0b2233;
 }
-.forum-lvltwo .important-info .title {
-  border-bottom: none;
-}
 .forum-lvltwo .forum-title {
   padding: 25px 0;
 }
@@ -1320,15 +1317,6 @@ section.wrap-main-news {
 }
 .forum-main article {
   position: relative;
-}
-.forum-main article::after {
-  content: "";
-  background: url(../img/big-arrow.png);
-  width: 17px;
-  height: 10px;
-  position: absolute;
-  top: 35px;
-  right: 30px;
 }
 .themes-topic {
   background: #fff;
@@ -1528,4 +1516,23 @@ section.wrap-main-news {
 }
 .forum-lvltwo .list-freedom a:hover {
   text-decoration: none;
+}
+
+.forum-main article .hide-block {
+  background: url(../img/big-arrow.png);
+  width: 17px;
+  height: 10px;
+  position: absolute;
+  top: 35px;
+  right: 30px;
+}
+.forum-main article .hide-block.hide-active {
+  -moz-transform: rotate(180deg); /* Для Firefox */
+    -ms-transform: rotate(180deg); /* Для IE */
+    -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(180deg); /* Для Opera */
+    transform: rotate(180deg);
+}
+.forum-main article .hide-block:hover {
+  cursor: pointer;
 }

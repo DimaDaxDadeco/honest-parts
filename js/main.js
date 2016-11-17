@@ -8,28 +8,28 @@ $(document).ready(function() {
 
 			//узнаем высоту от начала страницы до блока на который ссылается якорь
 				top = $(id).offset().top;
-			
+
 			//анимируем переход на расстояние - top за 1500 мс
 			$('body,html').animate({scrollTop: top}, 800);
 		});
 	/* ------  */
 
 		var StickyElement = function(node){
-	  var doc = $(document), 
+	  var doc = $(document),
 	      fixed = false,
 	      anchor = node.find('.sticky-anchor'),
 	      content = node.find('menu');
-	  
-	  var onScroll = function(e){	
+
+	  var onScroll = function(e){
 	    var docTop = doc.scrollTop(),
 	        anchorTop = anchor.offset().top;
-	    
+
 	    if(docTop > anchorTop){
 	      if(!fixed){
 	      	$('menu .logo img').attr("src","img/logo-icon.png");
 	      	$('.search-icon').css('display','none');
 	        anchor.height(content.outerHeight());
-	        content.addClass('fixed');        
+	        content.addClass('fixed');
 	        fixed = true;
 	      }
 	    }  else   {
@@ -37,7 +37,7 @@ $(document).ready(function() {
 	      	$('menu .logo img').attr("src","img/logo.png");
 	      	$('.search-icon').css('display','block');
 	        anchor.height(0);
-	        content.removeClass('fixed'); 
+	        content.removeClass('fixed');
 	        fixed = false;
 	      }
 	    }
@@ -46,5 +46,10 @@ $(document).ready(function() {
 		  $(window).on('scroll', onScroll);
 		};
 
-		var fixMenu = new StickyElement($('#wrapper'));		
+		var fixMenu = new StickyElement($('#wrapper'));
+
+	$(".forum-main article .hide-block").on("click", function (event) {
+		$(this).siblings(".textHide").toggle();
+		$(this).toggleClass("hide-active");
+	});
 });
