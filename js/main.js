@@ -28,7 +28,7 @@ $(document).ready(function() {
 	      if(!fixed){
 	      	$('menu .logo img').attr("src","img/logo-icon.png");
 	      	$('.search-icon').css('display','none');
-	      	$('.search-fix-wrap').css('display', "block");
+	      	$('.search-fix-wrap').addClass("visible");
 	        anchor.height(content.outerHeight());
 	        content.addClass('fixed');
 	        fixed = true;
@@ -37,7 +37,7 @@ $(document).ready(function() {
 	      if(fixed){
 	      	$('menu .logo img').attr("src","img/logo.png");
 	      	$('.search-icon').css('display','block');
-	      	$('.search-fix-wrap').css('display', "none");
+	      	$('.search-fix-wrap').removeClass("visible");
 	        anchor.height(0);
 	        content.removeClass('fixed');
 	        fixed = false;

@@ -1586,3 +1586,6 @@ menu .search-btn {
 .search-fix-wrap { display: none; }
 
 button:focus { outline: none; }
+
+.visible {opacity: 0 !important;}
+.fix-logo {display: none;}
