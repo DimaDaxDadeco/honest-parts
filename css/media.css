@@ -106,6 +106,9 @@ menu ul {
 .forum-lvltwo .list-freedom {
   font-size: 1.125em;
 }
+
+menu.fixed .what-search {width: 500px}
+menu .search-btn {right: -330px;}
 }
 @media screen and (max-width:1200px)  {
 .logo {
@@ -175,7 +178,7 @@ menu.fixed .logo {padding:7px 0 0 0;}
 .themes-topic table .title-theme {
 	float: none;
 }
-menu .search-btn {right: 45px}
+menu .search-btn {right: -45px}
 }
 @media screen and (max-width:992px)  {
 .wrap-news {

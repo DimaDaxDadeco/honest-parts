@@ -1578,14 +1578,14 @@ footer, .copyright { position: relative; }
 .search-fix-wrap {position: relative;}
 menu .search-btn {
   position: absolute;
-  top: 0; bottom: 0; right: 25px; margin: auto 0;
+  top: 0; bottom: 0; right: -265px; margin: auto 0;
   width: 16px; height: 16px;
   background: url(../img/search-icon.png) no-repeat center;
   border: 0;
 }
-.search-fix-wrap { display: none; }
 
 button:focus { outline: none; }
 
-.visible {opacity: 0 !important;}
+.search-fix-wrap { display: none;}
+.visible {display: block;}
 .fix-logo {display: none;}
