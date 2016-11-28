@@ -299,11 +299,24 @@ menu ul li a:hover {
   font-family: pfdindisplaypro-reg;
   font-size: 16px;
   color: #fff;
-  background: #1b5987 url(../img/message-icon.png) no-repeat right 28px center;
+  background: #1b5987;
   border:none;
   padding:29px;
   margin-top: -14px;
   width: 100%;
+}
+.email-info {position: relative;}
+.info .send-email {
+  background: url(../img/message-icon.png) no-repeat center;
+  border: none;
+  height: 20px;
+  width: 28px;
+  position: absolute;
+  z-index: 2;
+  right: 18px;
+  top: -15px;
+  bottom: 0;
+  margin:auto 0;
 }
 .nopad {
   padding:0;
@@ -634,11 +647,22 @@ footer .num-info {
   color: #fff;
 }
 footer #email {
-  background: #162128 url(../img/message-icon.png) no-repeat right 28px center;
+  background: #162128;
   color: #466071;
   margin-top: 0;
   padding:26px;
   min-width: 250px;
+}
+footer .send-email {
+  background: #162128 url(../img/message-icon.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 18px;
+  width: 28px;
+  height: 20px;
+  margin: auto 0;
+  border: 0;
 }
 #email::-webkit-input-placeholder {color:#6da1ca;}
 #email::-moz-placeholder          {color:#6da1ca;}/* Firefox 19+ */
@@ -721,9 +745,9 @@ menu.fixed ul {
 }
 menu.fixed .what-search {
   display: block;
-  height: 80px;
+  height: 79px;
   width: 360px;
-  background: #f4f8fb url(../img/search-icon.png) no-repeat right+25px center;
+  background: #f4f8fb;
   border: none;
   font-family: pfdindisplaypro-reg;
   font-size: 16px;
@@ -1536,3 +1560,29 @@ section.wrap-main-news {
 .forum-main article .hide-block:hover {
   cursor: pointer;
 }
+footer, .copyright { position: relative; }
+/* .parallax {
+  perspective: 1px;
+  height: 1800px;
+  overflow-x: hidden;
+}
+.wrap-main-news {
+  transform: translateZ(-2px) scale(3);
+}
+.wrap-news {
+  transform: translateZ(0);
+}
+.wrap-main-news, .wrap-news {
+
+} */
+.search-fix-wrap {position: relative;}
+menu .search-btn {
+  position: absolute;
+  top: 0; bottom: 0; right: 25px; margin: auto 0;
+  width: 16px; height: 16px;
+  background: url(../img/search-icon.png) no-repeat center;
+  border: 0;
+}
+.search-fix-wrap { display: none; }
+
+button:focus { outline: none; }

@@ -28,14 +28,16 @@ $(document).ready(function() {
 	      if(!fixed){
 	      	$('menu .logo img').attr("src","img/logo-icon.png");
 	      	$('.search-icon').css('display','none');
+	      	$('.search-fix-wrap').css('display', "block");
 	        anchor.height(content.outerHeight());
 	        content.addClass('fixed');
 	        fixed = true;
 	      }
-	    }  else   {
+	    } else {
 	      if(fixed){
 	      	$('menu .logo img').attr("src","img/logo.png");
 	      	$('.search-icon').css('display','block');
+	      	$('.search-fix-wrap').css('display', "none");
 	        anchor.height(0);
 	        content.removeClass('fixed');
 	        fixed = false;

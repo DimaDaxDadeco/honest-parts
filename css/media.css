@@ -175,6 +175,7 @@ menu.fixed .logo {padding:7px 0 0 0;}
 .themes-topic table .title-theme {
 	float: none;
 }
+menu .search-btn {right: 45px}
 }
 @media screen and (max-width:992px)  {
 .wrap-news {
@@ -303,6 +304,7 @@ menu.fixed .logo {padding:7px 0 0 0;}
 	width: 100%;
 	margin-top:10px;
 }
+.info .subscribers {font-size: 13px;}
 }
 @media screen and (max-width:768px)  {
 	#email {
@@ -314,9 +316,7 @@ menu.fixed .logo {padding:7px 0 0 0;}
 	.friend {
 		padding-top: 10px;
 	}
-	footer #email {
-		width: 50%;
-	}
+
 	.wrap-news aside .forum, .wrap-news aside .rubric {
 		width: 100%;
 		float: left;
@@ -430,4 +430,5 @@ menu.fixed .logo {padding:7px 0 0 0;}
 .themes-topic table tr td:first-child {
 	padding-left: 0;
 }
+.info .send-email {top:0;}
 }
