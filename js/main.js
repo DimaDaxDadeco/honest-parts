@@ -48,10 +48,19 @@ $(document).ready(function() {
 		  $(window).on('scroll', onScroll);
 		};
 
-		var fixMenu = new StickyElement($('#wrapper'));
+	var fixMenu = new StickyElement($('#wrapper'));
 
 	$(".forum-main article .hide-block").on("click", function (event) {
 		$(this).siblings(".textHide").toggle();
 		$(this).toggleClass("hide-active");
 	});
+
+    $("#search-but").on("click", function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $(".info").offset().top
+        }, 500, function() {
+            $(".what-search").focus();
+        });
+    });
 });
