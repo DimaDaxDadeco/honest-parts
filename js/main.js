@@ -63,4 +63,17 @@ $(document).ready(function() {
             $(".what-search").focus();
         });
     });
+    $(".enter").on("click", function(e) {
+    	e.preventDefault();
+    	$(".modal-auth-wrap").toggle();
+    });
+    $(".close").on("click", function(e) {
+    	e.preventDefault();
+    	$(".modal-auth-wrap").toggle();
+    });$(".modal-auth-wrap").on("click", function(e) {
+    	e.preventDefault();
+    	if (e.target === $(".modal-auth-wrap")[0]) {
+    		$(".modal-auth-wrap").toggle();
+    	}
+    });
 });

@@ -434,4 +434,9 @@ menu.fixed .logo {padding:7px 0 0 0;}
 	padding-left: 0;
 }
 .info .send-email {top:0;}
+.modal-auth-wrap .modal {
+	width: 100%;
+	padding: 30px 10px;
+}
+.modal-auth-wrap .modal .enter-soc {text-align: center;}
 }

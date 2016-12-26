@@ -1589,3 +1589,106 @@ button:focus { outline: none; }
 .search-fix-wrap { display: none;}
 .visible {display: block;}
 .fix-logo {display: none;}
+
+.modal-auth-wrap {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: none;
+}
+.modal-auth-wrap .modal {
+  width: 380px;
+  height: 500px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 45px;
+}
+.modal-auth-wrap .modal h4 {
+  text-transform: uppercase;
+  font-family: MyriadPro-Bold;
+  color: #0b2233;
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.modal-auth-wrap .modal input {
+  width: 100%;
+  border: 2px solid #ebf0f4;
+  padding: 13px;
+  font-family: pfdindisplaypro-reg;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.modal-auth-wrap .modal input::-webkit-input-placeholder {color:#c1c6ca;}
+.modal-auth-wrap .modal input::-moz-placeholder          {color:#c1c6ca;}
+.modal-auth-wrap .modal input:-moz-placeholder           {color:#c1c6ca;}
+.modal-auth-wrap .modal input:-ms-input-placeholder      {color:#c1c6ca;}
+.modal-auth-wrap .modal .forgot-pass {
+  color: #1b5987;
+  font-family: pfdindisplaypro-reg;
+  text-decoration: underline;
+
+}
+.modal-auth-wrap .modal .forgot-pass:hover {
+  text-decoration: none;
+}
+.modal-auth-wrap .modal button {
+  font-family: "pfdindisplaypro-med";
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 30px;
+  background: #226496;
+  border: 0;
+  border-radius: 2px;
+  float: right;
+}
+.modal-auth-wrap .modal button:hover {
+  background: #4b97d3;
+}
+.modal-auth-wrap .modal .but {
+  border-bottom: 1px solid #ebf0f4;
+  padding-bottom: 25px;
+  margin-bottom: 10px;
+}
+.modal-auth-wrap .modal .no-acc {
+  color: #0b2233;
+  font-family: pfdindisplaypro-reg;
+  font-size: 18px;
+}
+.modal-auth-wrap .modal .reg {
+  font-family: pfdindisplaypro-reg;
+  color: #1b5987;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.modal-auth-wrap .modal .reg:hover {
+  text-decoration: none;
+}
+.modal-auth-wrap .modal .enter-soc {
+  font-family: pfdindisplaypro-reg;
+  color: #a2a8ad;
+}
+.modal-auth-wrap .modal .list-soc {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.modal-auth-wrap .modal .list-soc li {
+  display: inline-block;
+}
+.modal-auth-wrap .modal .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
