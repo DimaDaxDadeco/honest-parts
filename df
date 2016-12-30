@@ -1,0 +1,53 @@
+[33mcommit 5ad69cfdb598aa2401a9ec3bb3336f8334ba5592[m
+Author: DimaDaxDadeco <dimdaxdadeco@mail.ru>
+Date:   Mon Dec 26 22:28:56 2016 +0300
+
+    auth form
+
+[33mcommit ca16347e6ffce33e696918336a7477ba47142cb9[m
+Author: Dmitry Dadeco <dimdaxdadeco@mail.ru>
+Date:   Wed Nov 30 20:39:33 2016 +0300
+
+    when click button it will be scroll page and focus input search
+
+[33mcommit 570b1bbe73daf7cf4302ff2b7803059aaf66b6e6[m
+Author: Dmitry Dadeco <dimdaxdadeco@mail.ru>
+Date:   Mon Nov 28 21:02:57 2016 +0300
+
+    update
+
+[33mcommit d2ced8befeeabc1df9ea59095ee0d2e40aa2b3e3[m
+Author: Dmitry Dadeco <dimdaxdadeco@mail.ru>
+Date:   Mon Nov 28 20:24:59 2016 +0300
+
+    fix seizing of fix menu
+
+[33mcommit 11160c961785b70faa38bff4198be26849e76cb6[m
+Author: Dmitry Dadeco <dimdaxdadeco@mail.ru>
+Date:   Mon Nov 28 19:31:50 2016 +0300
+
+    clicable search icons
+
+[33mcommit 9c462acc4cb5bd3e716641cc4b14e3ad23107c21[m
+Author: Dmitry Dadeco <dimdaxdadeco@mail.ru>
+Date:   Thu Nov 17 22:51:18 2016 +0300
+
+    completed arrow hide click
+
+[33mcommit 25b332c6ab7bc3984546a797f4d718b8e6a1ce39[m
+Author: Dmitry Dadeco <dimdaxdadeco@mail.ru>
+Date:   Mon Nov 14 22:46:57 2016 +0300
+
+    forum-lvl2
+
+[33mcommit 83e3230d6cf540697089d532f4223473c2bccbc5[m
+Author: Dmitry Dadeco <dimdaxdadeco@mail.ru>
+Date:   Sun Nov 13 21:34:45 2016 +0300
+
+    add some arrow in forum-main, pageproofs forum-lvl2
+
+[33mcommit 3dd8ebf6f3ca2cde2a76882682748489b0d683aa[m
+Author: Dmitry Dadeco <dimdaxdadeco@mail.ru>
+Date:   Sun Nov 13 16:12:16 2016 +0300
+
+    forum-main

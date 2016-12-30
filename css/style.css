@@ -217,7 +217,7 @@ menu ul {
 menu ul li {
   float: left;
   list-style: none;
-  margin-right: 43px;
+  margin-right: 20px;
 }
 menu ul li:last-child {
   margin-right: 0;
@@ -225,7 +225,7 @@ menu ul li:last-child {
 menu ul li a {
   color: #226496;
   font-family: pfdindisplaypro-med;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 18px;
   display: block;
   border-bottom: 1px solid #226496;
@@ -1691,4 +1691,92 @@ button:focus { outline: none; }
   position: absolute;
   top: 15px;
   right: 15px;
+}
+.word-info {
+  font-family: "pfdindisplaypro-reg";
+  color: #ee9119;
+  border-bottom: 1px dashed #ee9119;
+}
+.word-info:hover {
+  cursor: help;
+}
+.word-info-window {
+  position: absolute;
+  width: 320px;
+  height: 335px;
+  background: #fff;
+  padding: 25px 0;
+  display: none;
+  z-index: 99
+}
+.word-info-window::before {
+  content: "";
+  border: 25px solid transparent; border-right: 25px solid #fff;
+  display: block;
+  width: 25px;
+  height: 25px;
+  left: -40px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+}
+.word-info-window .word {
+  font-family: "pfdindisplaypro-med";
+  font-size: 24px;
+  color: #0b2233;
+  margin: 5px;
+  padding: 0 25px;
+}
+.word-info-window .descrpition {
+  font-family: "PTF55F";
+  color: #a2a8ad;
+  margin: 5px;
+  font-size: 16px;
+  padding: 0 25px;
+}
+.word-info-window img {
+  margin-left: 25px;
+}
+.word-info-window .word-share {
+  padding: 12px 0;
+  border-top: 1px solid #eaeaea;
+  margin-top: 20px;
+  font-family: "pfdindisplaypro-reg";
+  font-size: 14px;
+}
+.word-info-window .word-share .share {
+  color: #a2a8ad;
+  padding-left: 50px;
+  position: relative;
+}
+.word-info-window .word-share .share::before {
+  content: "";
+  background: url(../img/share.png);
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 25px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.word-info-window .word-share .more {
+  color: #226496;
+  float: right;
+  text-decoration: underline;
+  display: block;
+  padding: 0 25px;
+}
+.word-info-window .word-share .more:hover {
+  text-decoration: none;
+}
+.word-info-window .close-word-info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: url(../img/close-info-word.png);
 }

@@ -76,4 +76,28 @@ $(document).ready(function() {
     		$(".modal-auth-wrap").toggle();
     	}
     });
+
+    $(".close-word-info").on("click", function(e) {
+    	e.preventDefault();
+    	var info = $(".word-info-window");
+    	info.toggle();
+    });
+    $(document).on("click", function(e) {
+    	e.preventDefault();
+    	var word = $(".word-info");
+    	var info = $(".word-info-window");
+    	if (!word.is(e.target) && info.has(e.target).length === 0 && !info.is(e.target)) {
+			info.hide();
+		}
+    });
+    $(".word-info").on("click", function(e) {
+    	var info = $(".word-info-window");
+    	info.show();
+    	var height = info.height();
+    	var position = {
+    		top: e.pageY - (e.pageY - $(this).offset().top) - height / 2 - 23 + $(this).height() / 2,
+    		left: e.pageX - (e.pageX - $(this).offset().left) + $(this).width()
+    	};
+    	info.css(position);
+    });
 });
