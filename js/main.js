@@ -1,18 +1,10 @@
 $(document).ready(function() {
 	$("#top").on("click", function (event) {
-			//отменяем стандартную обработку нажатия по ссылке
 			event.preventDefault();
-
-			//забираем идентификатор бока с атрибута href
 			var id  = $(this).attr('href'),
-
-			//узнаем высоту от начала страницы до блока на который ссылается якорь
 				top = $(id).offset().top;
-
-			//анимируем переход на расстояние - top за 1500 мс
 			$('body,html').animate({scrollTop: top}, 800);
 		});
-	/* ------  */
 
 		var StickyElement = function(node){
 	  var doc = $(document),
@@ -82,14 +74,6 @@ $(document).ready(function() {
     	var info = $(".word-info-window");
     	info.toggle();
     });
-    $(document).on("click", function(e) {
-    	e.preventDefault();
-    	var word = $(".word-info");
-    	var info = $(".word-info-window");
-    	if (!word.is(e.target) && info.has(e.target).length === 0 && !info.is(e.target)) {
-			info.hide();
-		}
-    });
     $(".word-info").on("click", function(e) {
     	var info = $(".word-info-window");
     	info.show();
@@ -99,5 +83,72 @@ $(document).ready(function() {
     		left: e.pageX - (e.pageX - $(this).offset().left) + $(this).width()
     	};
     	info.css(position);
+    	$(document).on({
+			"click.myevent": function(e) {
+		    	e.preventDefault();
+		    	var word = $(".word-info");
+		    	var info = $(".word-info-window");
+		    	if (!word.is(e.target) && info.has(e.target).length === 0 && !info.is(e.target)) {
+					info.hide();
+					$(document).off('click.myevent');
+				}
+		    }
+		});
+    });
+
+    var criteria = new DropDown($('#criteria'));
+    var sorting = new DropDown($("#sorting"));
+
+    $(".clickable-word").on("click", function(e) {
+    	e.preventDefault();
+    	var moreInfo = $(this).parent();
+    	var addSlash = $(this).children(".what").text() + " - ";
+    	$(this).children(".what").text(addSlash);
+    	if (moreInfo.hasClass("more-info")) {
+	    	var deleteSlash = addSlash.replace(/-/g, "");
+	    	$(this).children(".what").text(deleteSlash);
+    	}
+    	moreInfo.toggleClass("more-info");
+    });
+    $(".wrap-news main .photo-wrap .rating .clickable").on("click", function() {
+    	var toogleActive = $(this).siblings(".all-rating");
+    	toogleActive.toggleClass("active");
+    });
+    $(".like").on("click", function() {
+    	var allLikesDislikes = $(this).parent().parent().siblings("li").children(".like-wrap").children(".like-dislike");
+    	allLikesDislikes.removeClass("active");
+    	var toogleActive = $(this).siblings(".like-dislike");
+    	toogleActive.toggleClass("active");
     });
 });
+function DropDown(el) {
+    this.dd = el;
+    this.placeholder = this.dd.children('span');
+    this.opts = this.dd.find('ul.dropdown > li');
+    this.val = '';
+    this.index = -1;
+    this.initEvents();
+}
+DropDown.prototype = {
+  initEvents : function() {
+      var obj = this;
+
+      obj.dd.on('click', function(event){
+          $(this).children(".dropdown").toggleClass('active');
+          return false;
+      });
+
+      obj.opts.on('click',function(){
+          var opt = $(this);
+          obj.val = opt.text();
+          obj.index = opt.index();
+          obj.placeholder.text(obj.val);
+      });
+  },
+  getValue : function() {
+      return this.val;
+  },
+  getIndex : function() {
+      return this.index;
+  }
+}

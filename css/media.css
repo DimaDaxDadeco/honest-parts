@@ -39,7 +39,7 @@ menu ul li a {
 .main-news .bottom .eye {
 	font-size: 58px;
 }
-.wrap-news main .photo .user, .wrap-news main .photo .clock {
+.wrap-news main .photo-wrap .user, .wrap-news main .photo-wrap .clock {
 	font-size: 25px;
 }
 .wrap-news main .text h3 a {
@@ -109,6 +109,12 @@ menu ul {
 
 menu.fixed .what-search {width: 500px}
 menu .search-btn {right: -330px;}
+.themes-messages .message-wrap .message {
+	width: 85%;
+}
+.themes-messages .message-wrap .person-info  {
+	width: 15%;
+}
 }
 @media screen and (max-width:1200px)  {
 .logo {
@@ -310,6 +316,21 @@ menu.fixed .logo {padding:7px 0 0 0;}
 	margin-top:10px;
 }
 .info .subscribers {font-size: 13px;}
+.library .search .form input {
+	width: 40%;
+}
+.bosch .list-crit,
+.bosch .common-info {
+	width: 100%;
+  	padding: 30px 50px 50px;
+  	border: 0;
+  	display: block;
+}
+.bosch .list-crit .to-list {
+	position: relative;
+	bottom: 0;
+}
+.bosch .words { display: block; }
 }
 @media screen and (max-width:768px)  {
 	#email {
@@ -441,4 +462,80 @@ menu.fixed .logo {padding:7px 0 0 0;}
 	padding: 30px 10px;
 }
 .modal-auth-wrap .modal .enter-soc {text-align: center;}
+
+.contacts .contact {
+	padding: 15px;
+}
+
+.contacts .contact .form {
+	padding: 15px;
+}
+.contacts .contact .form input {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.themes-messages .message-wrap .message {
+	width: 100%;
+}
+.themes-messages .message-wrap .person-info  {
+	width: 100%;
+	text-align: center;
+}
+.themes-messages .message-wrap .person-info .avatar {
+	margin: 0 auto;
+}
+.dropdown-wrap {
+	width: 100%;
+}
+.words .info-word .criteria .visible-criteria {
+	width: 100%;
+}
+.words .info-word .criteria .visible-criteria ul {
+	background: #fff;
+}
+.specification .checkboxes {
+  width: 100%;
+  display: block;
+}
+.specification .checkboxes .checkboxes-row {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+.specification .checkboxes div {
+  display: inline-block;
+  width: 49%;
+}
+.words .info-word {
+	padding: 30px 5px 50px;
+}
+.library .search {
+	padding: 45px 5px 0 5px;
+}
+.specification {
+	padding: 20px 5px;
+}
+
+.library .search .form input {
+	width: 100%;
+}
+.producers .search .dropdown-wrap {
+	width: 100%;
+	margin-left: 0;
+	margin-top: 10px;
+}
+.library .search .form button:not(.arrow-dropdown) {
+	margin-top: 15px;
+}
+.producers .list-crit ul li {
+	width: 60%;
+	display: block;
+}
+.producers .list-crit {
+	padding: 30px 5px 50px;
+}
+.bosch .list-crit,
+.bosch .common-info {
+  	padding: 30px 10px 50px;
+}
 }
