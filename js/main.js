@@ -110,7 +110,7 @@ $(document).ready(function() {
     	}
     	moreInfo.toggleClass("more-info");
     });
-    $(".wrap-news main .photo-wrap .rating .clickable").on("click", function() {
+    $(".rating .clickable").on("click", function() {
     	var toogleActive = $(this).siblings(".all-rating");
     	toogleActive.toggleClass("active");
     });
@@ -119,6 +119,9 @@ $(document).ready(function() {
     	allLikesDislikes.removeClass("active");
     	var toogleActive = $(this).siblings(".like-dislike");
     	toogleActive.toggleClass("active");
+    });
+    $(".main-news .like").on("click", function() {
+      $(this).siblings(".like-dislike").show();
     });
 });
 function DropDown(el) {
