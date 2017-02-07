@@ -407,29 +407,6 @@ section.wrap-main-news {
   background: url(../img/eye.png) no-repeat left center;
   width: 50px;
 }
-.main-news .like-wrap {
-  top: 50px;
-  right: 50px;
-  position: absolute;
-}
-.main-news .like:hover {
-  cursor: pointer;
-}
-.main-news .like-dislike span:first-child {
-  margin-left: 30px;
-}
-.main-news .like-dislike {
-  position: absolute;
-  color: #a2a8ad;
-  left: -224px;
-  top: -26px;
-  width: 224px;
-  height: 75px;
-  background: url(../img/likes-dislikes-right.png) no-repeat;
-  padding: 25px 0;
-  display: block;
-  z-index: 10;
-}
 .wrap-news {
   color: #000;
   font-family: "pfdindisplaypro-reg";
