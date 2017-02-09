@@ -1747,6 +1747,21 @@ button:focus { outline: none; }
   margin: auto;
   position: absolute;
 }
+.word-info-window-view::before {
+  display: none;
+}
+.word-info-window-view::after {
+  content: "";
+  border: 25px solid transparent; border-left: 25px solid #fff;
+  display: block;
+  width: 25px;
+  height: 25px;
+  right: -40px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+}
 .word-info-window .word {
   font-family: "pfdindisplaypro-med";
   font-size: 24px;
@@ -2389,7 +2404,6 @@ section.contacts, section.library {
 .producers .search .form input {
   font-family: "PTF55F";
   background: #f8f8f8;
-  float: left;
   width: 45%;
 }
 .library .search .form button:not(.arrow-dropdown):hover {

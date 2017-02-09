@@ -78,19 +78,24 @@ $(document).ready(function() {
     	var info = $(".word-info-window");
     	info.show();
     	var height = info.height();
+      var width = info.width();
+      var windowWidth = $(window).width();
+      var left = e.pageX - (e.pageX - $(this).offset().left) + $(this).width();
     	var position = {
     		top: e.pageY - (e.pageY - $(this).offset().top) - height / 2 - 23 + $(this).height() / 2,
-    		left: e.pageX - (e.pageX - $(this).offset().left) + $(this).width()
+    		left: left
     	};
-    	info.css(position);
-      /*var scrollLeft = $(window).scrollLeft();
-      var windowWidth = $(window).width();
-      var currentEl = $(this);
-      var offset = currentEl.offset();
 
-      if(scrollLeft <= offset.left && (currentEl.height() + offset.left) < (scrollLeft + windowWidth)) {
-        debugger
-      }*/
+      if(left + width > windowWidth) {
+        var position = {
+          top: e.pageY - (e.pageY - $(this).offset().top) - height / 2 - 23 + $(this).height() / 2,
+          left: left - info.width() - + $(this).width()
+        };
+        $(".word-info-window").addClass("word-info-window-view");
+      } else {
+        $(".word-info-window").removeClass("word-info-window-view");
+      }
+      info.css(position);
     	$(document).on({
 			"click.myevent": function(e) {
 		    	e.preventDefault();
