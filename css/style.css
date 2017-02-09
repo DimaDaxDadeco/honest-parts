@@ -757,6 +757,8 @@ menu.fixed .pad-enter {
 }
 menu.fixed .nav {
   margin-left: -200px;
+}
+.nav {
   padding-right: 0;
 }
 menu.fixed .logo {
