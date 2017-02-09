@@ -757,6 +757,7 @@ menu.fixed .pad-enter {
 }
 menu.fixed .nav {
   margin-left: -200px;
+  padding-right: 0;
 }
 menu.fixed .logo {
   padding: 15px 0 0 0;
@@ -789,6 +790,7 @@ menu.fixed .what-search:-ms-input-placeholder      {color:#c9ced1;}
   color: #fff;
   min-height: 819px;
   position: relative;
+  overflow: hidden;
 }
 .wrap-news-title .title {
   padding: 50px 70px 0;
@@ -1881,7 +1883,8 @@ section.contacts, section.library {
   outline: none;
 }
 
-.contacts .contact .form button, .library .search .form button {
+.contacts .contact .form button,
+.library .search .form button {
   color: #fff;
   background: #226496;
   padding:15px 25px 15px 32px;
@@ -1892,6 +1895,14 @@ section.contacts, section.library {
   line-height: 18px;
   border: 0;
   float: right;
+  position: relative;
+}
+.library .search .form button.search-btn {
+  padding:12px 25px;
+}
+.library .search .form button img {
+  margin-right: 7px;
+  margin-top: -3px;
 }
 
 .contacts .contact .form button:hover {
