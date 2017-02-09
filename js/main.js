@@ -98,7 +98,9 @@ $(document).ready(function() {
       info.css(position);
     	$(document).on({
 			"click.myevent": function(e) {
-		    	e.preventDefault();
+          if (!$(".more").is(e.target)) {
+            e.preventDefault();
+          }
 		    	var word = $(".word-info");
 		    	var info = $(".word-info-window");
 		    	if (!word.is(e.target) && info.has(e.target).length === 0 && !info.is(e.target)) {
