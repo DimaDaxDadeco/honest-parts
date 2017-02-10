@@ -538,4 +538,11 @@ menu.fixed .logo {padding:7px 0 0 0;}
 .bosch .common-info {
   	padding: 30px 10px 50px;
 }
+.editPD .right span {
+  width: 100%;
+}
+.editPD .right input,
+.editPD .right textarea {
+  width: 100%;
+}
 }

@@ -225,7 +225,7 @@ menu ul li:last-child {
 menu ul li a {
   color: #226496;
   font-family: pfdindisplaypro-med;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   display: block;
   border-bottom: 1px solid #226496;
@@ -2559,4 +2559,125 @@ section.contacts, section.library {
 }
 .bosch .words {
   display: table;
+}
+.personal h2 {
+  font-family: "pfdindisplaypro-bold";
+  color: #fff;
+  font-size: 60px;
+  margin: 5px 0;
+}
+.personal ul li, .personal ul li a {
+  font-family: "pfdindisplaypro-reg";
+  font-size: 18px;
+}
+.personal {
+  text-align: center;
+}
+.personal i {
+  font-size: 16px;
+  margin: 0 5px;
+}
+.personal ul {
+  padding: 0;
+  margin: 0;
+}
+.personal ul li {
+  display: inline-block;
+}
+.editPD {
+  background: #fff;
+  padding: 45px 0;
+  font-family: "pfdindisplaypro-reg";
+  margin-top: -560px;
+  position: relative;
+  z-index: 4;
+}
+.editPD p {
+  margin: 5px 0;
+}
+.personalName {
+  font-family: "pfdindisplaypro-med";
+  color: #4a97d2;
+  font-size: 24px;
+}
+.editPD .personalName {
+  margin-bottom: 15px;
+}
+.changeImg {
+  color: #1b5987;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.changeImg:hover {
+  text-decoration: none;
+}
+.personalInfo p {
+  color: #a2a8ad;
+  font-size: 14px;
+}
+.personalInfo span {
+  color: #226496;
+}
+.editPD .left {
+  text-align: center;
+}
+.personalInfo {
+  text-align: left;
+  display: inline-block;
+}
+.editPD .right {
+  border-left: 1px solid #eaeaea;
+  padding: 0 80px;
+}
+.editPD .right h3 {
+  font-family: "MyriadPro-Bold";
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.editPD .right p {
+  font-family: "PTF55F";
+  color: #0b2233;
+  margin-bottom: 15px;
+}
+.editPD .right span {
+  width: 20%;
+  display: inline-block;
+}
+.editPD .right input,
+.editPD .right textarea {
+  outline: none;
+  width: 79%;
+  border: 1px solid #ebf0f4;
+  color: #565b5e;
+  padding: 15px;
+}
+.editPD .right textarea {
+  height: 200px;
+  resize: none;
+}
+.editPD .right .about {
+  vertical-align: top;
+  margin-top: 10px;
+}
+.savePersonal {
+  color: #fff;
+  background: #226496;
+  padding:15px 25px 15px 32px;
+  margin-top: 5px;
+  display: inline-block;
+  font-family: "pfdindisplaypro-med";
+  font-size: 18px;
+  line-height: 18px;
+  border: 0;
+  margin-top: 30px;
+  float: right;
+}
+.savePersonal:hover {
+  background: #4b97d3;
+}
+.nickname {
+
 }
