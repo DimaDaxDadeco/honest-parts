@@ -211,13 +211,12 @@ menu {
 }
 menu ul {
   padding: 0;
-  margin-top:45px;
-  float: right;
+  margin-top: 45px;
 }
 menu ul li {
   float: left;
   list-style: none;
-  margin-right: 20px;
+  margin-right: 28px;
 }
 menu ul li:last-child {
   margin-right: 0;
@@ -234,7 +233,12 @@ menu ul li a.article {
   background: url(../img/arrow-bottom.png) no-repeat center right;
   padding-right: 17px;
 }
-menu ul li:first-child a, menu ul li:first-child a:hover, menu ul li:first-child a:focus {
+menu ul li:first-child a,
+menu ul li:first-child a:hover,
+menu ul li:first-child a:focus,
+menu ul li:last-child a,
+menu ul li:last-child a:hover,
+menu ul li:last-child a:focus {
   border-bottom: transparent 1px solid;
 }
 menu ul li a.active,menu ul li a.active:hover,menu ul li a.active:focus {
@@ -248,7 +252,6 @@ menu ul li a:hover {
   width: 16px;
   height: 16px;
   background: url(../img/search-icon.png);
-  margin:48px auto 5px;
   display: block;
 }
 .enter {
@@ -268,7 +271,7 @@ menu ul li a:hover {
   color:#4a97d2;
 }
 .pad-enter {
-  padding: 0 0 0 4px;
+  padding: 0 35px 0 4px;
 }
 .info {
   background: #226496;
@@ -757,12 +760,14 @@ menu.fixed .pad-enter {
 }
 menu.fixed .nav {
   margin-left: -200px;
+  position: relative;
+  z-index: 999;
 }
 .nav {
   padding-right: 0;
 }
 menu.fixed .logo {
-  padding: 15px 0 0 0;
+  padding: 15px 0 0 15px;
 }
 menu.fixed ul {
   margin-top:30px;
@@ -1606,7 +1611,7 @@ footer, .copyright { position: relative; }
 .search-fix-wrap {position: relative;}
 menu .search-btn {
   position: absolute;
-  top: 0; bottom: 0; right: -265px; margin: auto 0;
+  top: 0; bottom: 0; right: -242px; margin: auto 0;
   width: 16px; height: 16px;
   background: url(../img/search-icon.png) no-repeat center;
   border: 0;
@@ -2678,6 +2683,104 @@ section.contacts, section.library {
 .savePersonal:hover {
   background: #4b97d3;
 }
-.nickname {
+.persSet {
+  color: #4a97d2;
+  font-family: "pfdindisplaypro-med";
+  font-size: 16px;
+  margin-top: 13px;
+  border-bottom: 1px solid #f7fafc;
+  display: inline-block;
+  padding: 15px;
+  box-shadow: 1px 1px 13px #f8f8f8;
+  position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.persSet button {
+  border: 0;
+  background: none;
+  display: inline-block;
+  padding: 0;
+}
+.dropdown-set {
+  font-size: 16px;
+  color: #1b5987;
+  position: absolute;
+  z-index: 10;
+  background: #fff;
+  width: 100%;
+  left: 0;
+  display: none;
+}
+.dropdown-set.active {
+  display: block;
+}
+.dropdown-set i {
+  margin-right: 10px;
+}
+.dropdown-set ul {
+  margin: 10px 0 10px;
+}
+.dropdown-set li {
+  padding: 5px 0;
+  float: none;
+  margin: 0 0 0 15px;
 
+}
+.dropdown-set li a {
+  border: 0;
+}
+.dropdown-set li a:hover {
+  border: 0;
+}
+.dropdown-set li a span {
+  text-decoration: underline;
+}
+.editPD .right .checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+.editPD .right .checkbox + label {
+  cursor: pointer;
+}
+.editPD .right .checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 40px;
+}
+.editPD .right .checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  background: #CDD1DA;
+}
+.editPD .right .checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: all .2s;
+}
+.editPD .right .checkbox:checked + label:before {
+  background: #9FD468;
+}
+.editPD .right .checkbox:checked + label:after {
+  opacity: 0;
+}W
+.editPD .right .checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(255,255,0,.5);
 }

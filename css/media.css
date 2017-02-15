@@ -128,9 +128,6 @@ menu ul, .search-icon,.enter {
 menu ul {
 	margin-top: 5px;
 }
-.search-icon {
-	margin:8px auto 0;
-}
 .enter {
 	margin-top: -10px;
 	margin-bottom: 5px;
@@ -184,8 +181,15 @@ menu.fixed .logo {padding:7px 0 0 0;}
 .themes-topic table .title-theme {
 	float: none;
 }
-menu .search-btn {right: -45px}
+menu .search-btn {right: -25px}
 menu ul li { margin-right: 17px; }
+.nav {
+	padding-left: 35px;
+}
+.persSet {
+	margin: 0;
+	padding: 5px 15px;
+}
 }
 @media screen and (max-width:992px)  {
 .wrap-news {
@@ -206,6 +210,7 @@ menu ul li { margin-right: 17px; }
 		position: relative;
 		min-height: 45px;
 		margin-bottom: 10px;
+		padding-left: 35px;
 	}
 	.nav ul {
 		width: 100%;
@@ -215,7 +220,7 @@ menu ul li { margin-right: 17px; }
 		padding: 5px 0;
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: 35px;
 		border: solid 1px #aaa;
 		background: #FAFAFA url(../img/icon-menu.png) no-repeat 10px 15px;
 		border-radius: 5px;

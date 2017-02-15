@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" href="">
 	<title>Честные запчасти</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -42,32 +43,74 @@
 		</div>
 		<div class="sticky-anchor"></div>
 		<menu>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-xs-12 forfix"><a href="#" class="logo">
-						<img src="img/logo.png" alt="Честные запчасти" class="noFix-Logo"></a>
-						<img src="img/logo-icon.png" alt="Честные запчасти" class="fix-logo"></a>
-					</div>
-					<div class="col-lg-7 col-md-8 col-sm-2 col-xs-5 nav">
-						<ul class="">
-							<li class="current"><a href="#" class="active">Главная</a></li>
-							<li><a href="#">О блоге</a></li>
-							<li><a href="#">Производители</a></li>
-							<li><a href="#">Библиотека</a></li>
-							<li><a href="#">Обзор на заказ</a></li>
-							<li><a href="#">Форум</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-1 col-md-2 col-sm-8 col-xs-3 forfixsearch">
-						<a href="#" id="search-but" class="search-icon"></a>
+			<div class="row">
+				<div class="col-lg-3 col-xs-12 forfix"><a href="#" class="logo">
+					<img src="img/logo.png" alt="Честные запчасти" class="noFix-Logo"></a>
+					<img src="img/logo-icon.png" alt="Честные запчасти" class="fix-logo"></a>
+				</div>
+				<div class="col-lg-7 col-md-8 col-sm-2 col-xs-5 nav">
+					<ul class="">
+						<li class="current"><a href="#" class="active">Главная</a></li>
+						<li><a href="#">О блоге</a></li>
+						<li><a href="#">Производители</a></li>
+						<li><a href="#">Библиотека</a></li>
+						<li><a href="#">Обзор на заказ</a></li>
+						<li><a href="#">Форум</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li class="hidden-xs hidden-sm"><a href="#" id="search-but" class="search-icon"></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-1 col-md-2 col-sm-8 col-xs-3 forfixsearch">
 					<div class="hidden-sm hidden-xs search-fix-wrap">
 						<input type="text" name="search" class="what-search" placeholder="Что ищем?">
 						<button name="search" class="search-btn"></button>
 					</div>
-					</div>
-					<div class="col-lg-1 col-md-2 col-sm-2 col-xs-4 pad-enter">
-						<a href="#" class="enter">Вход</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 pad-enter">
+				<!-- delete display none if user not authorization -->
+					<a href="#" class="enter" style="display: none">Вход</a>
+					<div class="persSet">
+						<div>
+							<img src="img/mini-photo-user.png" alt="user">
+							<button class="onDropdownSet">
+								<span>Aleks013</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</button>
+						</div>
+						<div class="dropdown-set">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<span>Сообщения</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<span>Мои обзоры</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<span>Личный данные</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<span>Мои настройки</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<span>Выйти</span>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

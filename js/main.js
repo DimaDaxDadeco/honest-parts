@@ -149,6 +149,26 @@ $(document).ready(function() {
     $(".main-news .like").on("click", function() {
       $(this).siblings(".like-dislike").show();
     });
+    $(".onDropdownSet").on("click", function() {
+      $(this).parent().siblings(".dropdown-set").addClass("active");
+      $(document).on({
+        "click.myevent": function(e) {
+            e.preventDefault();
+            var btn = $(".onDropdownSet");
+            var dropdownSet = $(".dropdown-set");
+            if (!btn.has(e.target).length && !dropdownSet.has(e.target).length && !dropdownSet.is(e.target)) {
+              dropdownSet.removeClass("active");
+              $(document).off('click.myevent');
+            }
+          }
+      });
+    });
+    var disabled = true;
+    $("#checkbox").on("click", function() {
+      var another = $(".another");
+      disabled = !disabled;
+      another.prop("disabled", disabled);
+    });
 });
 function DropDown(el) {
     this.dd = el;
